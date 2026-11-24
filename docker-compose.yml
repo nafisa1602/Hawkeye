@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: hawkeye
+      POSTGRES_PASSWORD: hawkeye
+      POSTGRES_DB: hawkeye
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+  db_test:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: hawkeye
+      POSTGRES_PASSWORD: hawkeye
+      POSTGRES_DB: hawkeye_test
+    ports: ["5433:5432"]
+volumes:
+  pgdata:
