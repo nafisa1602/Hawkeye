@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
-// feature routes get mounted here later
+app.use('/api/repositories', require('./routes/repository.routes'));
 
 app.use((req, res) => res.status(404).json({ error: { code: 'NOT_FOUND', message: 'Route not found' } }));
 app.use(errorHandler);
