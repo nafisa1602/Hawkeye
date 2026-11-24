@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Test & coverage
+coverage/
+.nyc_output/
+
+# Build output
+dist/
+build/
+
+# Uploads / local storage
+uploads/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker volumes
+pgdata/
+# Personal docs / AI tool folders (not committed)
+Hawkeye_Proposal*
+LAB_TASK_CHECKLIST*
+CLAUDE.md
+docs/
+.agents/
+.claude/
+.cursor/
+.devin/
