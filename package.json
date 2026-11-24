@@ -8,6 +8,10 @@
     "start": "node src/server.js",
     "test": "jest --runInBand"
   },
+  "jest": {
+  "testEnvironment": "node",
+  "setupFiles": ["<rootDir>/tests/setupEnv.js"]
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nafisa1602/Hawkeye.git"
